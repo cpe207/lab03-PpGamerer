@@ -4,6 +4,8 @@ body {
   min-height: 100vh; /* Ensure full viewport height */
   margin: 0;
   justify-content: center; /* Center items horizontally */
+  min-height: 100vh;
+
 }
 h1 {
   font-size: 35px;
@@ -34,13 +36,13 @@ html {
   font-style:normal;
 }
 
-img {
-  border-radius: 15px 15px; /*ขอบกลม*/
+.imground {
+  border-radius: 1rem 1rem; /*ขอบกลม*/
   max-width: 100%;
 }
 
 a {
-  border-radius: 15px 15px; /*ขอบกลม*/
+  border-radius: 1rem 1rem; /*ขอบกลม*/
   margin-bottom: 10px;
 }
 
@@ -64,7 +66,7 @@ a:hover, a:active {
 .rcorners1 { /*กล่องข้อความทึบ หน้า index*/
   text-align: center;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 1rem;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -75,11 +77,11 @@ a:hover, a:active {
 }
 
 .rcorners2 { /*กล่องข้อความโปร่ง*/
-  border-radius: 25px;
+  border-radius: 1.5rem;
   border: solid #000000a4;
   padding : 20px;
-  width: 550px;
-  max-width: calc(100% - 40px);
+  max-width: 550px;
+  width: calc(100% - 40px);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -87,13 +89,16 @@ a:hover, a:active {
 
 @media (max-width: 768px) {
 .rcorners2 {
-    padding: 10px;
+    padding: 15px;
     max-width: calc(100% - 20px);
 }
+.column {
+        flex-basis: 100%; /* Full width for columns on small screens */
+      }
 }
 
 .rcorners3 { /*กล่องข้อความทึบ2 หน้า contact*/
-border-radius: 25px;
+border-radius: 1.5rem;
 background: white;
 padding: 20px;
 width: 260px;
@@ -107,7 +112,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-border-radius: 15px 15px;
+border-radius: 1rem 1rem;
 background: white;
 padding: 20px;
 width: 245px;
@@ -136,12 +141,13 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 .column {
   flex: 33.33%;
   padding: 5px;
+  box-sizing: border-box;
 }
 
 /* Navbar container */
 .navbar {
 overflow: hidden;
-border-radius: 15px 0px;
+border-radius: 1rem 0rem;
 background-color: #ff837a;
 font-family: Kanit;
 display: flex;
@@ -216,14 +222,15 @@ background-color: blanchedalmond;
 position: fixed; /* Set the navbar to fixed position */
 top: 0; /* Position the navbar at the top of the page */
 width: 100%; /* Full width */
+z-index: 1000;
 }
 
 .main {
-margin-top: 135px; /* Add a top margin to avoid content overlay */
+margin-top: 160px; /* Add a top margin to avoid content overlay */
 }
 
 .main2 { /*Home*/
-margin-top: 160px; /* Add a top margin to avoid content overlay */
+margin-top: 180px; /* Add a top margin to avoid content overlay */
 }
 
 .enter-link { /*index Enter the website*/
@@ -238,12 +245,4 @@ padding: 0px;
 .subhead {
 margin-top: 10px;
 margin-bottom: 5px;
-}
-
-.content {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
