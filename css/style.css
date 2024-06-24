@@ -1,0 +1,249 @@
+body {
+  background-color: blanchedalmond;
+  display: flex;
+  min-height: 100vh; /* Ensure full viewport height */
+  margin: 0;
+  justify-content: center; /* Center items horizontally */
+}
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ff5050;
+}
+h2 {
+  font-size: 22.5px;
+}
+h3 {
+  color: #ff837a ;
+  display: block;
+  font-size: 1.6em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  font-style: italic;
+}
+.center-header {
+  text-align: center;
+}
+
+html {
+  font-family:"Kanit", sans-serif;
+  font-style:normal;
+}
+
+img {
+  border-radius: 15px 15px; /*ขอบกลม*/
+  max-width: 100%;
+}
+
+a {
+  border-radius: 15px 15px; /*ขอบกลม*/
+  margin-bottom: 10px;
+}
+
+.a2 {
+border-radius: 0;
+margin-bottom: 0px;
+}
+
+a:link, a:visited {
+  background-color: #ff837a; /*เปลี่ยนสีเมื่อเอาเมาส์วาง*/
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color:#ff5050;
+}
+
+.rcorners1 { /*กล่องข้อความทึบ หน้า index*/
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Display children elements in a column */
+  align-items: center; /* Center items horizontally */
+  max-width: 600px; /* Limit the width for better presentation */
+  margin: auto;
+}
+
+.rcorners2 { /*กล่องข้อความโปร่ง*/
+  border-radius: 25px;
+  border: solid #000000a4;
+  padding : 20px;
+  width: 550px;
+  max-width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+.rcorners2 {
+    padding: 10px;
+    max-width: calc(100% - 20px);
+}
+}
+
+.rcorners3 { /*กล่องข้อความทึบ2 หน้า contact*/
+border-radius: 25px;
+background: white;
+padding: 20px;
+width: 260px;
+height: 195px;
+margin: auto;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rcorners4 { /*กล่องข้อความทึบ3 หน้าhome*/
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 15px 15px;
+background: white;
+padding: 20px;
+width: 245px;
+height: 10px;
+margin: auto;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Navbar container */
+.navbar {
+overflow: hidden;
+border-radius: 15px 0px;
+background-color: #ff837a;
+font-family: Kanit;
+display: flex;
+padding: 0px;
+height: 50px; /* Adjusted height of the navbar */
+}
+
+/* Links inside the navbar */
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+padding: 10px 14px;
+text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+font-size: 16px;
+border: none;
+outline: none;
+color: white;
+padding: 1px 16px;
+background-color: inherit;
+font-family: Kanit; 
+margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: #ff5050;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ff5050;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.mainnavbar { /*fixed menu*/
+overflow: hidden;
+background-color: blanchedalmond;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%; /* Full width */
+}
+
+.main {
+margin-top: 135px; /* Add a top margin to avoid content overlay */
+}
+
+.main2 { /*Home*/
+margin-top: 160px; /* Add a top margin to avoid content overlay */
+}
+
+.enter-link { /*index Enter the website*/
+font-size: 24px; 
+margin-top: 10px;
+margin-bottom: 0;
+text-decoration: none; /* Remove underline */
+display: inline-block; /* Ensure it behaves like a block element */
+padding: 0px;
+}
+
+.subhead {
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
