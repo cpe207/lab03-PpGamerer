@@ -101,8 +101,8 @@ a:hover, a:active {
 border-radius: 1.5rem;
 background: white;
 padding: 20px;
-width: 260px;
-height: 195px;
+width: 300px;
+height: 205px;
 margin: auto;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -153,6 +153,7 @@ font-family: Kanit;
 display: flex;
 padding: 0px;
 height: 50px; /* Adjusted height of the navbar */
+z-index: 1001;
 }
 
 /* Links inside the navbar */
@@ -164,6 +165,13 @@ padding: 10px 14px;
 text-decoration: none;
 }
 
+.dropbtn {
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
 /* The dropdown container */
 .dropdown {
 float: left;
@@ -223,14 +231,25 @@ position: fixed; /* Set the navbar to fixed position */
 top: 0; /* Position the navbar at the top of the page */
 width: 100%; /* Full width */
 z-index: 1000;
+justify-content: center;
+align-items: center;
+padding: 0 20px; /* Adjust padding as needed */
+}
+
+.mainnavbar a {
+  border-radius: 1rem 1rem; /*ขอบกลม*/
+  margin-bottom: 10px;
+  text-decoration: none; /* Remove underline */
+  margin-right: 5px;
+  font-weight: bold;
 }
 
 .main {
-margin-top: 160px; /* Add a top margin to avoid content overlay */
+margin-top: 100px; /* Add a top margin to avoid content overlay */
 }
 
 .main2 { /*Home*/
-margin-top: 180px; /* Add a top margin to avoid content overlay */
+margin-top: 150px; /* Add a top margin to avoid content overlay */
 }
 
 .enter-link { /*index Enter the website*/
@@ -245,4 +264,15 @@ padding: 0px;
 .subhead {
 margin-top: 10px;
 margin-bottom: 5px;
+}
+
+.full-width-hr {
+  border: none;
+  margin-top: 15px;
+  border-top: 2px solid #ff5050;
+  width: 100%; /* Ensure it spans the full width */
+  position: fixed; /* Fixed position to ensure it's always at the top */
+  top: 50px; /* Adjusted to be below the fixed navbar */
+  z-index: 1001; /* Ensure it is above other content */
+  opacity:100%;
 }
