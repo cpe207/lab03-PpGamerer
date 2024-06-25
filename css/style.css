@@ -89,8 +89,6 @@ a:hover, a:active {
 border-radius: 1.5rem;
 background: white;
 padding: 20px;
-width: 300px;
-height: 210px;
 margin: auto;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -281,7 +279,7 @@ margin-bottom: 5px;
     margin-top: 160px; /* Add a top margin to avoid content overlay */
     }
     .rcorners3 { /*กล่องข้อความทึบ2 หน้า contact*/
-      width: 300px;
-      height: 230px;
+      padding: 15px;
+      max-width: calc(100% - 20px);
       }
 }
