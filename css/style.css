@@ -85,16 +85,6 @@ a:hover, a:active {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-.rcorners2 {
-    padding: 15px;
-    max-width: calc(100% - 20px);
-}
-.column {
-        flex-basis: 100%; /* Full width for columns on small screens */
-      }
-}
-
 .rcorners3 { /*กล่องข้อความทึบ2 หน้า contact*/
 border-radius: 1.5rem;
 background: white;
@@ -273,4 +263,21 @@ margin-bottom: 5px;
   top: 50px; /* Adjusted to be below the fixed navbar */
   z-index: 1001; /* Ensure it is above other content */
   opacity:100%;
+}
+
+@media (max-width: 768px) {
+  .rcorners2 {
+      padding: 15px;
+      max-width: calc(100% - 20px);
+  }
+  .column {
+          flex-basis: 100%; /* Full width for columns on small screens */
+        }
+  .main {
+    margin-top: 140px; /* Add a top margin to avoid content overlay */
+    }
+    
+    .main2 { /*Home*/
+    margin-top: 160px; /* Add a top margin to avoid content overlay */
+    }
 }
