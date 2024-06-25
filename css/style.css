@@ -16,7 +16,7 @@ h2 {
   font-size: 22.5px;
 }
 h3 {
-  color: #ff837a ;
+  color: #ff5050 ;
   display: block;
   font-size: 1.6em;
   margin-block-start: 1em;
@@ -89,6 +89,7 @@ a:hover, a:active {
 border-radius: 1.5rem;
 background: white;
 padding: 20px;
+
 margin: auto;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
